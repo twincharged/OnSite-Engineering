@@ -1,0 +1,307 @@
+doctype html
+html(lang="en")
+
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content="Power Studies, electrical inspections & evaluations, for commercial, industrial, residential clients")
+    meta(name="keywords" content="on site, onsite, onsite engineering, electrical engineering, engineering, custom, services, location, power studies, coordination study, arc flash, building evaluation, code compliance, electrical, NEC training, building inspections, electrical drawings, electrical studies, short circuit studies, power system coordination, coordination studies, short circuit study, electrical analysis, electrical system design, electrical study, NEC Code, electrical facility")
+    meta(name="author" content="Joseph Ritchie")
+    link(href="css/bootstrap.min.css" rel="stylesheet")
+    link(href="css/onsite.css" rel="stylesheet")
+    link(href="css/font-awesome.min.css" rel="stylesheet" type="text/css")
+    link(href="fonts/*/*.ttf")
+    script(src="js/jquery-1.11.1.min.js")
+    script(src="js/jquery.easing.min.js")
+    script(src="js/onsite.js")
+    title Onsite Engineering
+
+  body#page-top.index(data-spy="scroll" data-target=".navbar-fixed-top")
+    nav.navbar.navbar-onsite.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-main-collapse")
+          a.navbar-brand.page-scroll(href="#page-top")
+            span.light <font color="#e60000">O</font><font color="#4747ff">S</font>
+            .onsite-triangle
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.hidden: a(href="#page-top")
+            li: a.page-scroll(href="#about") About
+            li: a.page-scroll(href="#services") Services
+            li: a.page-scroll(href="#portfolio") Portfolio
+            li: a.page-scroll(href="#staff") Staff
+            li: a.page-scroll(href="#contact") Contact
+
+    header
+      .video-wrapper
+        .video-cover
+          video#header-video(autoplay loop muted poster="img/header-bg.png")
+            source(src="img/header-bg-video.mp4" type="video/mp4")
+            source(src="img/header-bg-video.mp4" type="video/webm")
+      .container
+        .intro-text
+          .intro-heading OnSite Engineering
+          a.btn-circle.page-scroll(href="#about")
+            i.fa.fa-angle-double-down.animated.arrow-lg
+
+    section#about
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading About
+            h3.section-subheading.text-muted.tlg Acclaimed engineering services.
+      .container.marketing
+        .row.featurette
+          .col-md-7
+            h3.service-heading OnSite's Objective
+            p.text-muted We strive to provide personal and custom electrical engineering services for commercial, industrial, residential, and utility clients. Our engineers and support staff are dedicated to the highest caliber product and client satisfaction.
+          .col-md-5.box-dark
+            img.featurette-image.img-responsive(src="img/about/objective.png")
+        hr
+        .row.featurette
+          .col-md-5.box-dark
+            img.featurette-image.img-responsive(src="img/about/atLocation.png")
+          .col-md-7
+            h3.service-heading At-Location Operations
+            p.text-muted OnSite's name is derived from its custom, on-location services. OnSite staff will evaluate present electrical equipment and pair efficient recommendations with the customer's future needs to streamline a safe, cost effective solution. This will definitively reduce process time for plan reviews, permits, and inspections.
+        hr
+        .row.featurette
+          .col-md-7
+            h3.service-heading Expertise in Industry Standards
+            p.text-muted OnSite’s staff has extensive knowledge in current codes, standards, and industry-critical electrical engineering solutions that are integrated with professionally assembled reports and plans.
+
+          .col-md-5.box-dark
+            img.featurette-image.img-responsive(src="img/about/sheraton.png")
+
+    section#services.bg-dark-gray
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading.text-white Services
+            h3.section-subheading.text-tainted Areas of expertise.
+        .row.text-center
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-bolt.fa-stack-1x.fa-inverse
+            h3.service-heading.text-white Arc-Flash Studies
+            p.text-tainted OSHA-required arc-flash energy calculations, short circuit, and coordination analysis for new or existing electrical distribution systems.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-search.fa-stack-1x.fa-inverse
+            h3.service-heading.text-white Inspection and Plan Review
+            p.text-tainted National Electrical and related construction code compliance analysis with at-site services for proposed and permitted construction projects.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-pencil.fa-stack-1x.fa-inverse
+            h3.service-heading.text-white Electrical Design
+            p.text-tainted Evaluation, design, and provison of permit-ready construction documents using AutoCAD, Bluebeam Review, EDR, and EasyPower software.
+    
+    section#portfolio
+      .col-lg-12.text-center
+        h2.section-heading Portfolio
+        h3.section-subheading.text-muted A selection OnSite’s past projects.
+      .container
+        .row
+          .col-md-4.col-sm-6.port-item
+            .port-caption
+              h3.noncapped Single Line Diagram
+            a.port-link(href="#lineExModal" data-toggle="modal")
+              .port-hover
+                .port-hover-content
+                  i.fa.fa-expand.fa-3x
+              img.img-responsive(src="img/portfolio/lineEx.png" alt="")
+          .col-md-4.col-sm-6.port-item
+            .port-caption
+              h3.noncapped Short Circuit Calculations
+            a.port-link(href="#iscExModal" data-toggle="modal")
+              .port-hover
+                .port-hover-content
+                  i.fa.fa-expand.fa-3x
+              img.img-responsive(src="img/portfolio/iscEx.png" alt="")
+          .col-md-4.col-sm-6.port-item
+            .port-caption
+              h3.noncapped Time-Current Curve
+            a.port-link(href="#tccExModal" data-toggle="modal")
+              .port-hover
+                .port-hover-content
+                  i.fa.fa-expand.fa-3x
+              img.img-responsive(src="img/portfolio/tccEx.png" alt="")
+          .col-md-4.col-sm-6.port-item
+            .port-caption
+              h3.noncapped Arc-Flash Labels
+            a.port-link(href="#arcExModal" data-toggle="modal")
+              .port-hover
+                .port-hover-content
+                  i.fa.fa-expand.fa-3x
+              img.img-responsive(src="img/portfolio/arcEx.png" alt="")
+          .col-md-4.col-sm-6.port-item
+            .port-caption
+              h3.noncapped AutoCAD Design
+            a.port-link(href="#designExModal" data-toggle="modal")
+              .port-hover
+                .port-hover-content
+                  i.fa.fa-expand.fa-3x
+              img.img-responsive(src="img/portfolio/designEx.png" alt="")
+          .col-md-4.col-sm-6.port-item
+            .port-caption
+              h3.noncapped Recent Portfolio
+            a.port-link(href="#projectsExModal" data-toggle="modal")
+              .port-hover
+                .port-hover-content
+                  i.fa.fa-expand.fa-3x
+              img.img-responsive(src="img/portfolio/onsiteProjectsPrev.png" alt="")
+    
+    section#staff.bg-dark-gray
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading.text-white Engineering Staff
+            h3.section-subheading.text-tainted Our knowledgeable team.
+        .row
+          .col-sm-4.col-centered
+            .staff-member
+              img.img-responsive.img-circle(src="img/staff/geo.png" alt="")
+              h3.text-white.noncapped George Ritchie
+              p.text-tainted P. E. Principal
+              hr
+              p.text-tainted Cofounder of OnSite, leads the company with nearly 30 years of extensive and varied experience in electrical planning, design, and field services. With a strong, proven track record among diverse clients, he is principal-in-charge for many of OnSite’s projects and power system studies. A certificate holder for plan review and inspections, he is a registered engineer in the states of Arizona, California, Nevada, New Mexico, Montana, Minnesota, and Wisconsin.
+              ul.list-inline.social.social-white
+                li: a(target="_blank" href="http://www.linkedin.com/pub/george-ritchie/a3/868/1a3/")
+                  i.fa.fa-linkedin
+    
+    aside.clients
+      .container
+        .row
+          .col-md-3.col-sm-6
+            a(target="_blank" href="https://www.phoenix.gov/")
+              img.img-responsive.img-centered(src="img/logos/cophoenix2.jpg" alt="")
+          .col-md-3.col-sm-6
+            a(target="_blank" href="http://www.syska.com/")
+              img.img-responsive.img-centered.syska-adjust(src="img/logos/syska2.jpg" alt="")
+          .col-md-3.col-sm-6
+            a(target="_blank" href="http://phoenixcontractingservices.com/")
+              img.img-responsive.img-centered.pcs-adjust(src="img/logos/pcs.png" alt="")
+          .col-md-3.col-sm-6
+            a(target="_blank" href="https://www.aps.com/en/residential/Pages/home.aspx")
+              img.img-responsive.img-centered.aps-adjust(src="img/logos/aps.jpg" alt="")
+
+    section#contact
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Contact Us
+            h3.section-subheading.text-white We'd be pleased to assist you.
+        .row
+          .col-lg-12
+            form#contactForm(name="sentMessage" novalidate="")
+              .row
+                .col-md-6
+                  .form-group
+                    input#name.form-control(name="name" type="text" placeholder="Your Name *" required="" data-validation-required-message="Please enter your name.")
+                    p.help-block.text-danger
+                  .form-group
+                    input#email.form-control(name="email" type="email" placeholder="Your Email *" required="" data-validation-required-message="Please enter your email address.")
+                    p.help-block.text-danger
+                  .form-group
+                    input#phone.form-control(name="phone" type="tel" placeholder="Your Phone *" required="" data-validation-required-message="Please enter your phone number.")
+                    p.help-block.text-danger
+                .col-md-6
+                  .form-group
+                    textarea#message.form-control(name="message" placeholder="Your Message *" required="" data-validation-required-message="Please enter a message.")
+                    p.help-block.text-danger
+                .clearfix
+                .col-lg-12.text-center
+                  button#mail.btn.btn-xl(type="submit") Send Message
+                  h4.section-subheading.text-white.contact-info
+                    | Email us at <a href="mailto:info@onsiteengineering.net">info@onsiteengineering.net</a>
+                    br
+                    | Call us at <a href="tel:6022140234">(602)-214-0234</a>
+
+    footer.container.row.col-md-4
+      span.copyright Copyright © OnSite Engineering 2014
+      span.built-by Website by <a href="mailto:joseph.cs.ritchie@gmail.com">Joseph Ritchie</a>
+
+
+
+
+
+
+
+
+
+
+    #lineExModal.port-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog.modal-lg
+        a.modal-close(type="button" data-dismiss="modal")
+          p.modal-x &times;
+        .modal-content
+          .modal-body
+            h2 Single Line Diagram
+            img.img-responsive(src="img/portfolio/lineEx.png" alt="")
+            p.text-muted The single line diagram represents the backbone of the electrical system. We prepare these to be technically complete, yet easy to read and understand.
+    
+    #iscExModal.port-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog.modal-lg
+        a.modal-close(type="button" data-dismiss="modal")
+          p.modal-x &times;
+        .modal-content
+          .modal-body
+            h2 Short Circuit Calculations
+            img.img-responsive.img-centered(src="img/portfolio/iscEx.png" alt="")
+            p.text-muted Three phase fault current calculations are presented graphically with motor contributions so that every point in the distribution system can be evaluated.
+
+    #tccExModal.port-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog.modal-lg
+        a.modal-close(type="button" data-dismiss="modal")
+          p.modal-x &times;
+        .modal-content
+          .modal-body
+            h2 Time-Current Curve
+            .tcc
+              img.img-responsive.img-centered.tcc-adjust(src="img/portfolio/tccEx.png" alt="")
+            p.text-muted Determining the proper balance between selective coordination and equipment/personnel protection requires detailed analysis and experienced engineering judgement.
+    
+    #arcExModal.port-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog.modal-lg
+        a.modal-close(type="button" data-dismiss="modal")
+          p.modal-x &times;
+        .modal-content
+          .modal-body
+            h2 Arc-Flash Labels
+            img.img-responsive.img-centered(src="img/portfolio/arcEx.png" alt="")
+            p.text-muted OSHA-compliant labels are created and printed in-house to ensure maximum quality control. OnSite personnel can apply the labels at site.
+
+    #designExModal.port-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog.modal-lg
+        a.modal-close(type="button" data-dismiss="modal")
+          p.modal-x &times;
+        .modal-content
+          .modal-body
+            h2 AutoCAD Design
+            img.img-responsive.img-centered(src="img/portfolio/designEx.png" alt="")
+            p.text-muted Professionally prepared and sealed permit-ready documents.
+
+    #projectsExModal.port-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog.modal-lg
+        a.modal-close(type="button" data-dismiss="modal")
+          p.modal-x &times;
+        .modal-content
+          .modal-body
+            h2 Recent Portfolio
+            img.img-responsive.img-centered(src="img/portfolio/onsiteProjects.png" alt="")
+            p.text-muted A broad range of recent product experience and activities.
+
+    #messageModal.port-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+      .modal-dialog.modal-lg
+        a.modal-close(type="button" data-dismiss="modal")
+          p.modal-x &times;
+        .modal-content
+          .modal-body
+            h2.section-heading Thanks for the message!
+            br
+            h3.section-subheading.text-muted We'll get back to you as soon as we can.
