@@ -617,21 +617,25 @@ section h4.section-subheading, h4.section-subheading {
     margin-top: 0;
 }
 
-aside.clients img {
+section#clients {
+    padding: 0 50px 0 50px;
+}
+
+section#clients img {
     margin: 50px auto;
     height: 125px;
 }
 
-aside.clients .syska-adjust {
+section#clients .syska-adjust {
     height: 150px;
 }
 
-aside.clients .pcs-adjust {
+section#clients .pcs-adjust {
     margin: 60px auto;
     height: 115px;
 }
 
-aside.clients .aps-adjust {
+section#clients .aps-adjust {
     margin: 67px auto;
     height: 100px;
 }
