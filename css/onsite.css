@@ -704,26 +704,29 @@ section#contact .contact-info {
 }
 
 footer {
+    bottom: 0px;
     padding: 5px 0;
-    text-align: center;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+footer span {
+    position: relative;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 40px;
+    max-height: 50px;
+    overflow: hidden;
 }
 
 footer span.copyright {
-    position: relative;
-    right: -15%;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 40px;
+    text-align: left;
 }
 
 footer span.built-by {
-    position: relative;
-    right: -200%;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 40px;
+    text-align: right;
+    left: 30%;
 }
 
 ul.social {
