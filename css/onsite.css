@@ -512,6 +512,10 @@ section h4.section-subheading, h4.section-subheading {
     margin: 0 0 15px;
 }
 
+#portfolio .port-link {
+    outline: 0;
+}
+
 #portfolio .port-item .port-link {
     display: block;
     position: relative;
