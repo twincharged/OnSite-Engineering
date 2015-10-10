@@ -867,3 +867,9 @@ body {
     ms-tap-highlight-color: #e60000;
     webkit-tap-highlight-color: #e60000;
 }
+
+a.page-scroll,
+a.page-scroll:focus,
+a.page-scroll:active {
+  background-color: transparent !important;
+}
